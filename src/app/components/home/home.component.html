@@ -1,9 +1,9 @@
 <!-- Page Content -->
 <div class="container px-4 px-lg-5 ">
     <!-- Heading Row-->
-    <div class="row gx-4 gx-lg-5 align-items-center my-5 ">
-        <div class="col-lg-7"><img class="img-fluid rounded mb- mb-lg-0 " style="height: 300px; width: 900px;"
-                src="../../../assets/images/instalaciones/portada.jpg" alt="..." /></div>
+    <div class="row gx-4 gx-lg-5 d-flex justify-content-center align-items-center my-5 ">
+        <div class="col-lg-6"><img class="img-fluid rounded" src="../../../assets/images/instalaciones/portada.jpg"
+                alt="..." /></div>
         <div class="col-lg-5 ">
             <h1 class="font-weight-light">Departamentos Arrayanes</h1>
             <p class="">Somos una pequeña empresa familiar dedicada al alojamiento turístico en Alta Gracia, y este es
@@ -16,17 +16,17 @@
     </div>
     <div class="row container text-center">
         <div class="col">
-            <button class="btn btn-info mb-2" (click)="scrollToDepartments()"
+            <button class="btn btn-primary mb-2" (click)="scrollToDepartments()"
                 style="cursor: pointer;">Departamentos</button>
         </div>
         <div class="col">
-            <button class="btn btn-info " (click)="scrollToUbicacion()" style="cursor: pointer;">Ubicacion</button>
+            <button class="btn btn-primary " (click)="scrollToUbicacion()" style="cursor: pointer;">Ubicacion</button>
         </div>
     </div>
     <!-- Call to Action-->
-    <div class="card text-white bg-secondary my-5 py-4 text-center">
+    <div class="card  background-list shadow my-5 py-4 text-center">
         <div class="card-body">
-            <div class="text-white m-0">
+            <div class="m-0">
                 <h2>Los departamenos cuentan con: </h2>
                 <ul>
                     <li>Cocina completa ( incluye microondas y vajilla) </li>
@@ -41,35 +41,39 @@
     <!-- Content Row-->
     <div class="row gx-4 gx-lg-5 justify-content-center" id="deptos">
         <!-- Departamento1 -->
-        <div class="col-md-4 mb-5">
-            <div class="card h-100">
-                <div class="card-body">
-                    <h3>Departamento 1</h3>
-                    <img class="img-fluid rounded mb-4 mb-lg-0"
+        <div class="col-md-4 mb-5 ">
+            <div class="card background-card shadow">
+                <div class="card-body ">
+                    <h3 class="d-flex justify-content-center align-items-center">Departamento 1</h3>
+                    <img class="img-fluid rounded mb-4 mb-lg-0 d-flex justify-content-center align-items-center"
                         src="../../../assets/images/instalaciones/depto-1/frente.jpg"
                         style="height: 198px; width: 374px;" alt="">
-                    <p>Planta Baja</p>
+                    <p class="d-flex justify-content-center align-items-center">Planta Baja</p>
                 </div>
-                <div class="card-footer"><a class="btn btn-primary btn-sm" (click)="redirectDepto1()">Fotos</a></div>
+                <div class="card-footer d-flex justify-content-center align-items-center"><a
+                        class="btn btn-primary btn-sm" (click)="redirectDepto1()">Fotos</a></div>
             </div>
         </div>
         <!-- Departamento2 -->
         <div class="col-md-4 mb-5">
-            <div class="card h-100">
+            <div class="card background-card shadow">
                 <div class="card-body">
-                    <h3>Departamento 2</h3>
-                    <img class="img-fluid rounded mb-4 mb-lg-0"
+                    <h3 class="d-flex justify-content-center align-items-center">Departamento 2</h3>
+                    <img class="img-fluid rounded mb-4 mb-lg-0 d-flex justify-content-center align-items-center"
                         src="../../../assets/images/instalaciones/depto-2/frente.jpg"
                         style="height: 198px; width: 374px;" alt="">
-                    <p>Primer piso</p>
+                    <p class="d-flex justify-content-center align-items-center">Primer piso</p>
                 </div>
-                <div class="card-footer"><a class="btn btn-primary btn-sm" (click)="redirectDepto2()">Fotos</a></div>
+                <div class="card-footer d-flex justify-content-center align-items-center"><a
+                        class="btn btn-primary btn-sm" (click)="redirectDepto2()">Fotos</a></div>
             </div>
         </div>
 
         <!-- Ubicacion -->
-        <iframe
+
+        <iframe class="mb-4"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3396.313764073738!2d-64.43416582349465!3d-31.652634507713582!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x942d574b4dcda689%3A0xa1b50e7f0f06ed94!2sViceint%20Dr.%20Jorge%20Nahal%20235%2C%20X5186%20Alta%20Gracia%2C%20C%C3%B3rdoba!5e0!3m2!1ses-419!2sar!4v1692022582802!5m2!1ses-419!2sar"
             width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
             referrerpolicy="no-referrer-when-downgrade" id="maps"></iframe>
+
     </div>
