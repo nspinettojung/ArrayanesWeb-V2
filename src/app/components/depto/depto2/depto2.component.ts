@@ -34,4 +34,8 @@ export class Depto2Component {
   goToDepto1() {
     this.router.navigate(['/depto1'])
   }
+
+  goToHome() {
+    this.router.navigate(['']);
+  }
 }
