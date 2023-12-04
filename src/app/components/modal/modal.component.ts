@@ -17,6 +17,6 @@ export class ModalComponent {
   @Input() depto: string = '';
 
 	openFullscreen(content: TemplateRef<any>) {
-		this.modalService.open(content, { size: 'xl', centered: true });
+		this.modalService.open(content, { fullscreen: true });
 	}
 }

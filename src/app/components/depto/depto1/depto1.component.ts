@@ -40,5 +40,5 @@ export class Depto1Component {
     this.router.navigate(['/depto2']);
   }
 
- 
+
 }

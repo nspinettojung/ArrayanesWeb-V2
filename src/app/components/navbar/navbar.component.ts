@@ -16,10 +16,10 @@ export class NavbarComponent {
   onWindowScroll() {
     let element = document.querySelector('.navbar') as HTMLElement;
     if (window.scrollY > element.clientHeight) {
-      element.classList.add('solid-navbar', 'rounded-4', 'mx-2', 'shadow-lg', 'sticky-top', 'bg-body-tertiary');
+      element.classList.add('bg-body-tertiary', 'rounded', 'mx-2', 'shadow-lg', 'sticky-top');
 
     } else {
-      element.classList.remove('solid-navbar', 'rounded-4', 'mx-2', 'shadow-lg', 'sticky-top', 'bg-body-tertiary');
+      element.classList.remove('bg-body-tertiary', 'rounded', 'mx-2', 'shadow-lg', 'sticky-top');
 
     }
   }
