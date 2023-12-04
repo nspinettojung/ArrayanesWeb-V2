@@ -1,7 +1,7 @@
 <ngb-carousel *ngIf="images">
     <ng-template ngbSlide *ngFor="let image of images; let i = index">
         <div class="">
-            <img [src]="image" alt="{{ gallery[i].description }}" class="img-fluid" />
+            <img [src]="image" alt="{{ gallery[i].description }}" class="" />
         </div>
         <div class="carousel-caption">
             <h3>{{ gallery[i].description }}</h3>
