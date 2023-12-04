@@ -1,29 +1,12 @@
-<div class="body">
-    <h2 class="text-center text-decoration-underline">Departamento 1</h2>
-    <!-- galery -->
-
-    <div class="centered">
-        <div class="col-lg-7 ">
-            <ngb-carousel *ngIf="images">
-                <ng-template ngbSlide *ngFor="let image of images; let i = index">
-                    <div class="picsum-img-wrapper">
-                        <img [src]="image" alt="{{ gallery[i].description }}" class="img-fluid" />
-                    </div>
-                    <div class="carousel-caption">
-                        <h3>{{ gallery[i].description }}</h3>
-                        <!-- Puedes personalizar la descripción aquí -->
-                    </div>
-                </ng-template>
-            </ngb-carousel>
+<!-- galery -->
+<ngb-carousel *ngIf="images">
+    <ng-template ngbSlide *ngFor="let image of images; let i = index">
+        <div class="">
+            <img [src]="image" alt="{{ gallery[i].description }}" class="img-fluid" />
         </div>
-
-    </div>
-
-    <div class="text-center mt-2 mb-2">
-        <a class="btn btn-primary" (click)="goToDepto2()">Ir A Departamento 2</a>
-    </div>
-    <div class="text-center mt-2">
-        <a class="btn btn-success" (click)="goToHome()">Inicio</a>
-    </div>
-
-</div>
+        <div class="carousel-caption">
+            <h3>{{ gallery[i].description }}</h3>
+            <!-- Puedes personalizar la descripción aquí -->
+        </div>
+    </ng-template>
+</ngb-carousel>
