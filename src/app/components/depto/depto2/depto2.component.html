@@ -1,11 +1,20 @@
-<ngb-carousel *ngIf="images">
-    <ng-template ngbSlide *ngFor="let image of images; let i = index">
-        <div class="">
-            <img [src]="image" alt="{{ gallery[i].description }}" class="" />
+<!-- galery -->
+@if (images) {
+<ngb-carousel>
+    @for (image of images; track image.url; let i = $index) {
+    <ng-template ngbSlide>
+
+        <div class="d-flex justify-content-center align-items-center">
+            <picture>
+                <source>
+                <img [ngSrc]="image" alt="{{ gallery[i].description }}" width="900" height="400" />
+            </picture>
         </div>
+
         <div class="carousel-caption">
             <h3>{{ gallery[i].description }}</h3>
-            <!-- Puedes personalizar la descripción aquí -->
         </div>
     </ng-template>
+    }
 </ngb-carousel>
+}

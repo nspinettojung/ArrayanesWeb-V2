@@ -9,7 +9,7 @@ import { Depto2Component } from "../depto/depto2/depto2.component";
     standalone: true,
     templateUrl: './modal.component.html',
     styleUrl: './modal.component.css',
-    imports: [CommonModule, Depto1Component, Depto2Component],
+    imports: [CommonModule, Depto1Component, Depto2Component, ],
     encapsulation: ViewEncapsulation.None,
 })
 export class ModalComponent {

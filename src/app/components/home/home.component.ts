@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+import { CommonModule, NgOptimizedImage } from '@angular/common';
 import { Component, Renderer2, inject } from '@angular/core';
 import { Router } from '@angular/router';
 import { ModalComponent } from "../modal/modal.component";
@@ -10,7 +10,7 @@ import { Depto2Component } from "../depto/depto2/depto2.component";
     selector: 'app-home',
     templateUrl: './home.component.html',
     styleUrls: ['./home.component.css'],
-    imports: [CommonModule, ModalComponent, Depto1Component, Depto2Component]
+    imports: [CommonModule, ModalComponent, Depto1Component, Depto2Component, NgOptimizedImage]
 })
 
 
