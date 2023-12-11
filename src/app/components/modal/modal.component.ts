@@ -1,4 +1,4 @@
-import { Component, Input, TemplateRef, ViewEncapsulation, inject } from '@angular/core';
+import { Component, EventEmitter, Input, Output, TemplateRef, ViewEncapsulation, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { Depto1Component } from "../depto/depto1/depto1.component";
@@ -15,8 +15,9 @@ import { Depto2Component } from "../depto/depto2/depto2.component";
 export class ModalComponent {
   private modalService = inject(NgbModal);
   @Input() depto: string = '';
-
-	openFullscreen(content: TemplateRef<any>) {
+   
+  openFullscreen(content: TemplateRef<any>) {
 		this.modalService.open(content, { fullscreen: true });
+    
 	}
 }

@@ -1,88 +1,61 @@
-<!-- Page Content -->
-<div class="container px-4 px-lg-5 ">
-    <!-- Heading Row-->
-    <div class="row gx-4 gx-lg-5 d-flex justify-content-center align-items-center my-5 shadow rounded bg-body-tertiary">
-        <div class="col-lg-6 py-4"><img class="rounded" ngSrc="../../../assets/images/instalaciones/portada.jpg"
-                alt="..." width="500" height="200" /></div>
-        <div class="col-lg-5 ">
-            <h1 class="font-weight-light">Departamentos Arrayanes</h1>
-            <p class="">Somos una pequeña empresa familiar dedicada al alojamiento turístico en Alta Gracia, y este es
-                el
-                ambiente con el que será recibido, un ambiente familiar y tranquilo. Nuestra idea es que ustedes se
-                sientan tan cómodos como en su casa, que nuestras instalaciones les sean cálidas y logren sentirse a
-                gusto durante su estadía.</p>
-        </div>
-
-    </div>
-    <div class="row container text-center">
-        <div class="col">
-            <button class="btn btn-primary mb-2 shadow" (click)="scrollToDepartments()"
-                style="cursor: pointer;">Departamentos</button>
-        </div>
-        <div class="col">
-            <button class="btn btn-primary shadow" (click)="scrollToUbicacion()"
-                style="cursor: pointer;">Ubicacion</button>
-        </div>
-    </div>
-    <!-- Call to Action-->
-    <div class="card  bg-body-tertiary shadow my-5 py-4 text-center">
-        <div class="card-body">
-            <div class="m-0">
-                <h2>Los departamenos cuentan con: </h2>
-                <ul>
-                    <li>Cocina completa ( incluye microondas y vajilla) </li>
-                    <li>Ambiente Climatizado (Calefacción y aire acondicionado)</li>
-                    <li>Ropa Blanca</li>
-                    <li>Cochera cubierta</li>
-                    <li>Servicio de Wifi</li>
-                </ul>
+<div class="container-fluid">
+    <div class="center-div">
+        <div class="row m-4 border">
+            <div class="col-lg-6 col-12 ">
+                <!-- left side -->
+                <div class="row ">
+                    <div
+                        class="col-12 top_div d-flex justify-content-center  align-items-center bg-img border border-black">
+                        <div class="slide-top text-light ">
+                            <h1 class="font-weight-light">Departamentos Arrayanes</h1>
+                            <p class="">Somos una pequeña empresa familiar dedicada al alojamiento turístico en Alta
+                                Gracia, y este es
+                                el
+                                ambiente con el que será recibido, un ambiente familiar y tranquilo. Nuestra idea es que
+                                ustedes se
+                                sientan tan cómodos como en su casa, que nuestras instalaciones les sean cálidas y
+                                logren sentirse a
+                                gusto durante su estadía.</p>
+                        </div>
+                    </div>
+                    <div
+                        class="col-12 top_div bg-secondary d-flex justify-content-center  align-items-center border border-black">
+                        <div class="border bg-secondary-subtle rounded shadow">
+                            <div class="m-0">
+                                <h2>Los departamenos cuentan con: </h2>
+                                <ul class="list-group">
+                                    <li class="list-group list-group-item ">Cocina completa ( incluye microondas y
+                                        vajilla) </li>
+                                    <li class="list-group list-group-item">Ambiente Climatizado (Calefacción y aire
+                                        acondicionado)</li>
+                                    <li class="list-group list-group-item">Ropa Blanca</li>
+                                    <li class="list-group list-group-item">Cochera cubierta</li>
+                                    <li class="list-group list-group-item">Servicio de Wifi</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- right side -->
+            <div class="col-lg-6 col-12">
+                <div class="row">
+                    <app-modal depto="Departamento 1"
+                        class="col-md-6 col-12 bg-danger bottom_sec_div d-flex justify-content-center  align-items-center bg-deptos bg-deptos1 border border-black">
+                        <app-depto1></app-depto1>
+                    </app-modal>
+                    <app-modal depto="Departamento 2"
+                        class="col-md-6 col-12 bg-primary bottom_sec_div d-flex justify-content-center  align-items-center bg-deptos bg-deptos2 border border-black">
+                        <app-depto2></app-depto2>
+                    </app-modal>
+                </div>
+                <div class="row border border-black bottom_first_div">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3396.313764073738!2d-64.43416582349465!3d-31.652634507713582!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x942d574b4dcda689%3A0xa1b50e7f0f06ed94!2sViceint%20Dr.%20Jorge%20Nahal%20235%2C%20X5186%20Alta%20Gracia%2C%20C%C3%B3rdoba!5e0!3m2!1ses-419!2sar!4v1692022582802!5m2!1ses-419!2sar"
+                        width="600" height="220" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade" id="maps"></iframe>
+                </div>
             </div>
         </div>
-    </div>
-    <!-- Content Row-->
-
-    <div id="deptos"></div>
-    <br>
-
-    <!-- Departamento1 -->
-    <div class="row mb-5 container justify-content-center">
-        <div class="card col-sm-4 mx-4 mb-2 bg-body-tertiary shadow ">
-            <div class="card-body ">
-                <h3 class="d-flex justify-content-center align-items-center">Departamento 1</h3>
-                <img class="rounded" ngSrc="../../../assets/images/instalaciones/depto1/Depto1_1.jpg" width="400"
-                    height="200" alt="">
-                <p class="d-flex justify-content-center align-items-center">Planta Baja</p>
-            </div>
-            <div class="d-flex justify-content-center">
-                <app-modal depto="Departamento 1">
-                    <app-depto1></app-depto1>
-                </app-modal>
-            </div>
-        </div>
-        <!-- Departamento2 -->
-        <div class="card col-sm-4 mx-4 mb-2 bg-body-tertiary shadow ">
-            <div class="card-body">
-                <h3 class="d-flex justify-content-center align-items-center">Departamento 2</h3>
-                <img class="rounded" ngSrc="../../../assets/images/instalaciones/depto2/depto2_1.jpg" width="400"
-                    height="200" alt="">
-                <p class="d-flex justify-content-center align-items-center">Primer piso</p>
-            </div>
-            <div class="d-flex justify-content-center">
-                <app-modal depto="Departamento 2">
-                    <app-depto2></app-depto2>
-                </app-modal>
-            </div>
-        </div>
-
-
-
-        <!-- Ubicacion -->
-
-    </div>
-    <div class="row d-flex justify-content-center">
-        <iframe class="col-lg-6 my-2"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3396.313764073738!2d-64.43416582349465!3d-31.652634507713582!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x942d574b4dcda689%3A0xa1b50e7f0f06ed94!2sViceint%20Dr.%20Jorge%20Nahal%20235%2C%20X5186%20Alta%20Gracia%2C%20C%C3%B3rdoba!5e0!3m2!1ses-419!2sar!4v1692022582802!5m2!1ses-419!2sar"
-            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade" id="maps"></iframe>
     </div>
 </div>

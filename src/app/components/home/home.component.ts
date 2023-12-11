@@ -17,6 +17,8 @@ import { Depto2Component } from "../depto/depto2/depto2.component";
 export class HomeComponent {
   private renderer = inject(Renderer2);
   private router = inject(Router);
+  
+   
 
   scrollToDepartments() {
     const element = document.getElementById('deptos');
@@ -39,4 +41,5 @@ export class HomeComponent {
   redirectDepto2(){
     this.router.navigate(['/depto2'])
   }
-}
+  
+ }

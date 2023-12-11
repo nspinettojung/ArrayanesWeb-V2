@@ -1,0 +1,8 @@
+.modalbtn {
+    height: calc(var(--div-height) - 30vh);
+  
+}
+
+.center-div .bottom_sec_div {
+    height: calc(var(--div-height) - 30vh);
+}

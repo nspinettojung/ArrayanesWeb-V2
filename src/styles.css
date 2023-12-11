@@ -7,3 +7,8 @@ img {
     background-size: cover;
     shape-margin: 0.75rem;
 }
+
+:root {
+    --div-height: 85vh;
+    --bg-size: 100% 100%;
+}
