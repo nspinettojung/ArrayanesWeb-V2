@@ -4,7 +4,7 @@
     @for (image of images; track image.url; let i = $index) {
     <ng-template ngbSlide>
 
-        <div class="d-flex justify-content-center align-items-center">
+        <div class="d-flex justify-content-center align-items-center ratio ratio-1x1">
             <picture>
                 <source>
                 <img [ngSrc]="image" alt="{{ gallery[i].description }}" width="900" height="400" />
