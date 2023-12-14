@@ -1,6 +1,6 @@
 <!-- galery -->
 @if (images) {
-<ngb-carousel>
+<ngb-carousel [interval]="0" class="bg-black rounded">
     @for (image of images; track image.url; let i = $index) {
     <ng-template ngbSlide>
 

@@ -1,7 +1,7 @@
 import { CommonModule, NgOptimizedImage } from '@angular/common';
 import { Component, inject } from '@angular/core';
 import { Router } from '@angular/router';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { NgbCarouselConfig, NgbCarouselModule, NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 
 type GalleryImage = string;
@@ -14,7 +14,8 @@ type GalleryImage = string;
   imports: [
     CommonModule,
     NgbModule,
-    NgOptimizedImage
+    NgOptimizedImage,
+    NgbCarouselModule
   ]
 })
 export class Depto1Component {
@@ -43,5 +44,12 @@ export class Depto1Component {
     this.router.navigate(['/depto2']);
   }
 
+
+  constructor(config: NgbCarouselConfig) {
+		// customize default values of carousels used by this component tree
+		config.interval = 0;
+		config.keyboard = false;
+		config.pauseOnHover = true;
+	}
 
 }

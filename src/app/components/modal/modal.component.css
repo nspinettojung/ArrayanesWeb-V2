@@ -6,3 +6,6 @@
 .center-div .bottom_sec_div {
     height: calc(var(--div-height) - 30vh);
 }
+.cursor-pointer{
+    cursor: pointer;
+}
