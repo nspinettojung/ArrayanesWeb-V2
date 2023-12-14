@@ -42,4 +42,5 @@ export class HomeComponent {
     this.router.navigate(['/depto2'])
   }
   
+  
  }

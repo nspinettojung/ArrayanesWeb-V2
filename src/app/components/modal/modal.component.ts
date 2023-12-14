@@ -15,7 +15,7 @@ import { Depto2Component } from "../depto/depto2/depto2.component";
 export class ModalComponent {
   private modalService = inject(NgbModal);
   @Input() depto: string = '';
-   
+  
   openFullscreen(content: TemplateRef<any>) {
 		this.modalService.open(content, { fullscreen: true });
     

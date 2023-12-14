@@ -4,8 +4,11 @@
 		<button type="button" class="btn-close" aria-label="Close" (click)="modal.dismiss('Cross click')"></button>
 	</div>
 	<div class="modal-body">
-		<ng-content ></ng-content>
+		<ng-content></ng-content>
 	</div>
 </ng-template>
 
-<div class="col bottom_sec_div d-flex justify-content-center  align-items-center text-white" (click)="openFullscreen(content)">{{ depto }}</div>
+<div class="col bottom_sec_div d-flex justify-content-center  align-items-center text-white"
+	(click)="openFullscreen(content)">
+	<h3 class="border rounded">{{ depto }}</h3>
+</div>
