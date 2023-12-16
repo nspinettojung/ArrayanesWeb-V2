@@ -1,13 +1,16 @@
-<nav class="navbar navbar-expand-lg my-2 " (scroll)="onWindowScroll();" id="navtop">
+<nav class="navbar navbar-expand-lg " (scroll)="onWindowScroll();" id="navtop">
     <div class="container-fluid px-5">
         <a class="navbar-brand" href="">Arrayanes</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"><span
-                class="navbar-toggler-icon"></span></button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center">
-                <li class="nav-item"><a class="nav-link active" aria-current="page" href="">Inicio</a></li>
+                class="">Contacto</span></button>
+        <div class=" offcanvas offcanvas-start" id="navbarNav">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
 
+            <ul class="navbar-nav d-flex justify-content-center align-items-center">
                 <li class="nav-item"><a class="nav-link bx bxl-whatsapp bx-sm" style='color:#25d366'
                         href="https://wa.me/3547540855" target="_blank"></a></li>
                 <li class="nav-item"><a class="nav-link bx bxl-facebook-circle bx-sm" style='color:#4267b2'
