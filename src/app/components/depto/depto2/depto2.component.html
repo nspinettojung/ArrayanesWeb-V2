@@ -3,14 +3,12 @@
 <ngb-carousel [interval]="0" class="bg-black rounded">
     @for (image of images; track image.url; let i = $index) {
     <ng-template ngbSlide>
-
         <div class="d-flex justify-content-center align-items-center">
             <picture>
-                <source>
+                <source >
                 <img [ngSrc]="image" alt="{{ gallery[i].description }}" width="900" height="400" />
             </picture>
         </div>
-
         <div class="carousel-caption">
             <h3>{{ gallery[i].description }}</h3>
         </div>
