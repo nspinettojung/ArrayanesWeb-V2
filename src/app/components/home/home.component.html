@@ -20,12 +20,8 @@
                     </div>
                     <div
                         class="col-12 top_div bg-dark text-white border border-black d-flex justify-content-center align-items-center flex-column ">
-
-
                         <h2 class="">Los departamenos cuentan con: </h2>
-
                         <hr class="border w-100">
-
                         <ul class="list-unstyled">
                             <li class="">Cocina completa ( incluye microondas y
                                 vajilla) </li>
@@ -35,12 +31,12 @@
                             <li class="">Cochera cubierta</li>
                             <li class="">Servicio de Wifi</li>
                         </ul>
-
                     </div>
                 </div>
             </div>
             <!-- right side -->
             <div class="col-lg-6 ">
+                @defer{
                 <div class="row">
                     <app-modal depto="Departamento 1"
                         class="col-md-6 col-12 bg-danger bottom_sec_div d-flex justify-content-center  align-items-center bg-deptos bg-deptos1 border border-black  p-0">
@@ -51,6 +47,9 @@
                         <app-depto2></app-depto2>
                     </app-modal>
                 </div>
+                }
+                <!-- location -->
+                @defer{
                 <div
                     class="border border-black bottom_first_div ratio ratio-21x9 d-flex justify-content-center  align-items-center ">
 
@@ -60,6 +59,7 @@
                         referrerpolicy="no-referrer-when-downgrade" id="maps"></iframe>
 
                 </div>
+                }
             </div>
         </div>
     </div>
