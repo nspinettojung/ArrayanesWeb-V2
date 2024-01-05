@@ -35,13 +35,11 @@
     background-image: url("../../../assets/images/instalaciones/depto2/depto2_1h.jpg");
 }
 
-.bg-deptos:hover {
+/* .bg-deptos:hover {
     filter: brightness(50%);
-}
+} */
 
 .slide-top {
-    -webkit-animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-    animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
     background-color: rgba(6, 5, 7, 0.50);
     height: calc(var(--div-height) - 40vh);
 }
