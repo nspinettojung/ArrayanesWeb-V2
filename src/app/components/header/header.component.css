@@ -1,0 +1,12 @@
+.backimage{
+    background-image: url('./../../../assets/images/instalaciones/portada.jpg');
+    background-size: cover;
+    background-position: center top;
+    height: 200px;
+}
+.bxl-whatsapp{
+    color:#25d366;
+}
+.bxl-facebook-circle{
+    color:#4267b2;
+}

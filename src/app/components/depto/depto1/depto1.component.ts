@@ -3,6 +3,7 @@ import { Component, HostListener, inject } from '@angular/core';
 import { Router } from '@angular/router';
 import { NgbCarouselConfig, NgbCarouselModule, NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
+
 @Component({
   standalone: true,
   selector: 'app-depto1',

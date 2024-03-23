@@ -1,27 +1,35 @@
-<nav class="navbar navbar-expand-lg " (scroll)="onWindowScroll();" id="navtop">
-    <div class="container-fluid px-5">
-        <a class="navbar-brand" href="">Arrayanes</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"><span
-                class="">Contacto</span></button>
-        <div class="offcanvas offcanvas-start" id="navbarNav">
-            <div class="offcanvas-header">
-                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Contacto</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-            </div>
-
-            <ul class="navbar-nav justify-content-center mx-5">
-                <hr>
-                <li class="nav-item mx-5"><a class="nav-link bx bxl-whatsapp bx-sm" style='color:#25d366;'
-                        href="https://wa.me/3547540855" target="_blank">WhatsApp</a></li>
-                <hr>
-                <li class="nav-item mx-5"><a class="nav-link bx bxl-facebook-circle bx-sm" style='color:#4267b2;'
-                        href="https://www.facebook.com/Departamentosarrayanes" target="_blank">Facebook</a></li>
-                <hr>
-                <li class="nav-item mx-5"><a class="nav-link bx bx-envelope bx-sm"
-                        href="mailto:aliajungues@gmail.com?Subject=Consulta por Departamentos" target="_blank">Email</a>
+<nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
+    <div class="container-fluid">
+        <a class="navbar-brand marck-script-regular" href="#">Departamentos Arrayanes</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active link-warning" aria-current="page" href="#">Home</a>
                 </li>
-                <hr>
+                <li class="nav-item">
+                    <a class="nav-link link-warning" href="#">Link</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Dropdown
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link link-warning" href="">Disabled</a>
+                </li>
             </ul>
         </div>
     </div>

@@ -7,6 +7,5 @@ export const routes: Routes = [
 
     { path: '', component: HomeComponent },
     { path: '', component: ModalComponent },
-    { path: '', component: Depto1Component },
-    { path: '', component: Depto2Component },
+   
 ];
