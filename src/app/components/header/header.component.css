@@ -1,12 +1,20 @@
-.backimage{
-    background-image: url('./../../../assets/images/instalaciones/portada.jpg');
-    background-size: cover;
-    background-position: center top;
-    height: 200px;
+.marck-script-regular {
+    font-family: "Marck Script", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2rem;
+    color: orange;
 }
-.bxl-whatsapp{
-    color:#25d366;
+
+@media screen and (min-width: 769px) {
+    .logoout {
+        display: none;
+    }
+   
 }
-.bxl-facebook-circle{
-    color:#4267b2;
+
+@media screen and (max-width:769px){
+    .marck-script-regular{
+        font-size: 1.9rem;
+    }
 }

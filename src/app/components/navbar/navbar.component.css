@@ -1,10 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Marck+Script&display=swap');
 
 .marck-script-regular {
-    font-family: "Marck Script", cursive;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 2rem;
-    color: orange;
+  font-family: "Marck Script", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2rem;
+  color: orange;
+}
+
+@media screen and (max-width: 768px) {
+  .navMovile {
+    position: absolute !important;
+    bottom: 0 !important;
+    width: 100%;
+    
   }
 
+  .logoout {
+    display: none;
+  }
+
+  .textCenter{
+       
+    justify-content: center !important;
+  }
+}
