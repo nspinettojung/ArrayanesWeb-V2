@@ -1,0 +1,21 @@
+.xh1wr54 {
+    height: 100vh;
+   
+}
+
+.xt45q98 {
+    width: 100%;
+    height: 800px;
+    margin-top: 50px;
+}
+
+
+@media screen and (max-width: 768px) {
+
+    .xt45q98 {
+        width: 100%;
+        height: 575px;
+        margin-top: 10px;
+    }
+  
+  }

@@ -1,0 +1,22 @@
+.xh1wr54 {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .xtxo751 {
+        display: flex;
+    }
+
+  
+
+    .xh1wr54 {
+        height: 100vh;
+        display: grid;
+    }
+
+}

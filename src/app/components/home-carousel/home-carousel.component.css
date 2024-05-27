@@ -1,11 +1,17 @@
-img{
-    height: 90vh;
+
+
+img {
+    height: 850px;
     width: 100%;
+    object-fit: cover;
 }
 
-@media screen and (max-width: 769px){
-    img{
-        height: 50vh;
+@media screen and (max-width: 769px) {
+    img {
+        height: 500px;
         width: 100%;
+        object-fit: contain;
     }
+
+   
 }

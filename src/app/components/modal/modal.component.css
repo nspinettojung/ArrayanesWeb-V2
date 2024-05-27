@@ -1,12 +1,28 @@
 .modalbtn {
     height: calc(var(--div-height) - 30vh);
-  
+
 }
 
 .center-div .bottom_sec_div {
     height: calc(var(--div-height) - 30vh);
 }
-.cursor-pointer{
+
+.cursor-pointer {
     cursor: pointer;
 }
 
+.xtxo752 {
+    display: none;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .xtxo751 {
+        display: none;
+    }
+
+    .xtxo752 {
+        display: block;
+    }
+}
