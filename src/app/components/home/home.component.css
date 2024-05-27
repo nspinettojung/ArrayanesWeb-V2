@@ -1,3 +1,7 @@
+.xh1wr54 {
+    height: 100vh;
+}
+
 .xb26p35 {
     position: fixed;
     bottom: 20px;
@@ -7,8 +11,9 @@
 }
 
 @media screen and (max-width: 768px) {
-   .xb26p35 {
-       display: none;
+    .xb26p35 {
+        display: none;
     }
     
+
 }

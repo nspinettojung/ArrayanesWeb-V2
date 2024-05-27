@@ -1,12 +1,20 @@
 .xh1wr54 {
     height: 100vh;
-   
+}
+
+.xt5s5rt{
+    font-family: "Roboto", sans-serif;
+    font-size: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
 }
 
 .xt45q98 {
     width: 100%;
     height: 800px;
-    margin-top: 50px;
+    margin-top: 10px;
 }
 
 
@@ -14,8 +22,17 @@
 
     .xt45q98 {
         width: 100%;
-        height: 575px;
+        height: 550px;
         margin-top: 10px;
     }
-  
-  }
+
+    .xt5s5rt{
+        font-family: "Roboto", sans-serif;
+        font-size: 1.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+}

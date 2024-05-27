@@ -11,18 +11,7 @@
     cursor: pointer;
 }
 
-.xtxo752 {
-    display: none;
-}
 
 
 
-@media screen and (max-width: 768px) {
-    .xtxo751 {
-        display: none;
-    }
 
-    .xtxo752 {
-        display: block;
-    }
-}
