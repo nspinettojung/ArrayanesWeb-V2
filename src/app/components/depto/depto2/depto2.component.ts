@@ -33,8 +33,10 @@ export class Depto2Component {
   constructor(config: NgbCarouselConfig) {
     // customize default values of carousels used by this component tree
     config.interval = 0;
-    config.keyboard = false;
+    config.keyboard = true;
     config.pauseOnHover = true;
+    config.showNavigationArrows = true;
+    config.showNavigationIndicators = true;
   }
 
 }
