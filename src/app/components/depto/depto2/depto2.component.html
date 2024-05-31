@@ -1,11 +1,10 @@
 <!-- galery -->
-@defer{
-<ngb-carousel [interval]="0" class="rounded carousel slide">
+@defer{ @if (images) {
+<ngb-carousel>
   @for (image of images; track image.url; let i = $index) {
   <ng-template ngbSlide>
     <div class="d-flex justify-content-center align-items-center">
       <picture>
-        <source />
         <img
           [ngSrc]="image"
           alt="{{ gallery[i].description }}"
@@ -20,4 +19,4 @@
   </ng-template>
   }
 </ngb-carousel>
-}
+}}

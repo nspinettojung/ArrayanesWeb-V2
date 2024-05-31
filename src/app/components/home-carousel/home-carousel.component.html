@@ -1,12 +1,14 @@
-<div class="container-fluid m-0 p-0">
-  <div class="x58t12c">
+<div class="container-fluid m-0 p-0 ">
+  <div class="x58t12c ">
     @if (images) {
     <ngb-carousel class="">
       @for (image of images; track $index) {
-      <ng-template [ngbSlide]>
-        <div class="picsum-img-wrapper">
-          <img class="" [src]="image" alt="Random first slide" />
+      <ng-template ngbSlide class="">
+        <div class="picsum-img-wrapper ">
+          <img class="x85i4rt" [src]="image" alt="Random first slide" />
+          
         </div>
+        <div class="x94zre3"></div>
       </ng-template>
       }
     </ngb-carousel>
